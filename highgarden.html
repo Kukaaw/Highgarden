@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Highgarden — кофейня в Приозёрске</title>
+<meta name="description" content="Highgarden: кофе, завтраки, пицца, пасты и авторские напитки. Приозёрск, ул. Кисунько 13/2. Ежедневно 10:00–22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#14241d;--green2:#1f3a2e;--paper:#f4f5f2;--amber:#e9a840;--line:#d9ddd5;--muted:#5a665f;
+--head:"Unbounded","Trebuchet MS",sans-serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--green);background:var(--paper);line-height:1.55;font-size:16.5px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--green);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-family:var(--head);font-weight:700;letter-spacing:.06em;text-decoration:none;font-size:1.05rem}
+nav{display:flex;gap:18px;font-weight:600;font-size:.92rem}
+nav a{text-decoration:none;color:#d6e0da}
+nav a:hover{color:var(--amber)}
+.hero{background:var(--green);color:#fff;padding:56px 0 64px}
+.hero h1{font-family:var(--head);font-weight:700;font-size:clamp(2.1rem,8vw,4.4rem);line-height:1.05;letter-spacing:-.02em;max-width:13ch}
+.hero p{margin-top:20px;max-width:44ch;color:#c5d2ca;font-size:1.08rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;font:700 .98rem var(--body);padding:14px 24px;border-radius:10px;border:2px solid var(--amber);background:var(--amber);color:var(--green);text-decoration:none}
+.btn:hover{background:#f3bd62}
+.btn.ghost{background:transparent;color:#fff;border-color:#6d8a7b}
+.btn.ghost:hover{border-color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:38px;font-size:.93rem;color:#c5d2ca}
+.facts b{color:#fff}
+section{padding:56px 0}
+h2{font-family:var(--head);font-weight:500;font-size:clamp(1.6rem,5vw,2.3rem);letter-spacing:-.01em;margin-bottom:8px}
+.lead{color:var(--muted);margin-bottom:22px;max-width:56ch}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 0 14px;margin-bottom:8px;scrollbar-width:thin}
+.tab{flex:none;font:600 .92rem var(--body);padding:9px 16px;border-radius:8px;border:2px solid var(--green);background:transparent;color:var(--green);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--green);color:#fff}
+.note{background:#fff;border-left:4px solid var(--amber);padding:10px 14px;margin:6px 0 10px;color:var(--muted);font-size:.93rem}
+.dish{display:grid;grid-template-columns:1fr auto;gap:2px 18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.dish h3{font-size:1.03rem;font-weight:700}
+.dish p{grid-column:1;color:var(--muted);font-size:.92rem}
+.price{grid-row:1;grid-column:2;font-weight:700;white-space:nowrap;text-align:right}
+.fine{margin-top:16px;color:var(--muted);font-size:.9rem}
+.contact{background:var(--green2);color:#fff}
+.contact .lead{color:#c5d2ca}
+.cols{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.cols h3{font-family:var(--head);font-weight:500;font-size:1rem;margin-bottom:6px;color:var(--amber)}
+.cols p{color:#e3ebe6}
+.cols a{color:#fff}
+footer{background:var(--green);color:#9db0a6;padding:24px 0;font-size:.88rem}
+@media(max-width:560px){nav{gap:12px;font-size:.85rem}section{padding:44px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">HIGHGARDEN</a>
+  <nav aria-label="Основное меню"><a href="#menu">Меню</a><a href="#contacts">Контакты</a></nav>
+</div></header>
+
+<main id="top">
+  <div class="hero"><div class="wrap">
+    <h1>Кофе, завтраки и пицца в Приозёрске</h1>
+    <p>Завтраки до 14:00 в будни, пасты, боулы, пицца и авторские напитки. Приходите на кофе или на полноценный обед.</p>
+    <div class="btns">
+      <a class="btn" href="#menu">Смотреть меню</a>
+      <a class="btn ghost" href="tel:+77074486371">Позвонить</a>
+    </div>
+    <div class="facts"><span><b>10:00–22:00</b> ежедневно</span><span><b>ул. Кисунько, 13/2</b></span></div>
+  </div></div>
+
+  <section id="menu"><div class="wrap">
+    <h2>Меню</h2>
+    <p class="lead">Выберите раздел. Цены указаны в тенге.</p>
+    <div class="tabs" role="tablist" aria-label="Разделы меню" id="tabs"></div>
+    <div id="note"></div>
+    <div id="dishes" role="tabpanel" aria-live="polite"></div>
+    <p class="fine">Обслуживание 10%. Если у вас аллергия на какие-то продукты, скажите бариста или официанту.</p>
+  </div></section>
+
+  <section class="contact" id="contacts"><div class="wrap">
+    <h2>Как нас найти</h2>
+    <p class="lead">Звоните, пишите в Instagram или заходите.</p>
+    <div class="cols">
+      <div><h3>Адрес</h3><p>г. Приозёрск, ул. Кисунько, 13/2</p></div>
+      <div><h3>Часы работы</h3><p>Каждый день с 10:00 до 22:00. Завтраки: в будни 10:00–14:00, в выходные 10:00–16:00.</p></div>
+      <div><h3>Телефон</h3><p><a href="tel:+77074486371">8-707-448-63-71</a></p></div>
+      <div><h3>Instagram</h3><p><a href="https://www.instagram.com/highgardencoffee/">@highgardencoffee</a></p></div>
+      <div><h3>Торты на заказ</h3><p>Любые дизайны, натуральные ингредиенты. Заказы по телефону <a href="tel:+77082000899">8-708-200-08-99</a>.</p></div>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">Демо-концепт сайта, сделанный для портфолио. Меню и данные взяты из открытого Instagram кофейни.</div></footer>
+
+<script>
+// [название, описание, цена]. Несколько цен пишем через "/"
+const menu = [
+{n:"Завтраки",note:"Подаём в будни с 10:00 до 14:00, в выходные с 10:00 до 16:00. Топпинги к сырникам и блинчикам: сгущёнка, мёд, сметана или джем, +300 ₸.",i:[
+["Сырники","","1500"],["Блинчики с творогом","","1500"],
+["Highgarden завтрак","Глазунья из двух яиц, колбаска, картофельные дольки, тостовый хлеб, солёные огурцы, помидоры, соус","3500"],
+["Глазунья из 2 яиц с тостами","Тосты, сливочное масло, творожный сыр. Колбаска, +700 ₸","2000"],
+["Мини конвертики с моцареллой","Тортилья, томаты в собственном соку, салат, сыр моцарелла, помидор","1500"],
+["Мини конвертики с беконом","Тортилья, салат, бекон, соус, помидор, сыр чеддер","1700"],
+["Мини конвертики с индейкой","Тортилья, творожный сыр, салат, пармезан, индейка, огурец","1700"],
+["Мини конвертики с креветками","Тортилья, ореховый соус, креветки, сладкий чили, салат, моцарелла, пармезан, черри","2000"],
+["Авокадо-тост","Крем-чиз, яйцо пашот, бородинский хлеб. Добавить: креветки +1000, вяленые томаты +600, красная рыба +1500","2500"],
+["Брускетта со скрэмблом","Творожный сыр. Добавить: индейка +500, бекон +500, свежие овощи +700","1500"],
+["Каша на безлактозном молоке","Рисовая, гречневая или овсяная. Добавить: ореховая смесь +450, мёд или джем +300, свежие фрукты +500","1500"]]},
+{n:"Салаты",i:[
+["Цезарь с курицей","Салат, томаты черри, куриное филе, сухари, перепелиное яйцо, пармезан, соус Цезарь","3200"],
+["Цезарь с креветками","Салат, томаты черри, креветки, сухари, перепелиное яйцо, пармезан, соус Цезарь","3700"],
+["Зелёный салат","Микс салата, авокадо, огурец, кунжут, кедровые орешки, оливковое масло, лимонный сок","4000"],
+["Тропический салат с креветками","Салат, апельсин, креветки, заправка на основе оливкового масла, соусы терияки и сладкого чили","3700"],
+["Салат к вину","Листья салата, груша, сыр пармезан, грецкие орехи, лимон, оливковое масло","3200"]]},
+{n:"Супы",i:[
+["Суп-пюре из чечевицы","","2000"],["Грибной крем-суп","","2700"],["Сырно-картофельный крем-суп","","2500"],
+["Том ям с морепродуктами","","4200"],["Рамен классический","","3500"],["Рамен сырный","","3700"]]},
+{n:"Паста",i:[
+["Паста с песто","Пармезан и кедровые орешки","3000"],["Карбонара","","3200"],["Чёрная паста с креветками","","4000"]]},
+{n:"Горячее",i:[
+["Курица терияки","Гарнир: рис","2000"],["Удон с говядиной и овощами","","4000"],["Орзо с овощами","","3500"],
+["Боул с креветками","Рис, креветки, нори, ореховый соус, черри, дайкон, чука","3500"],
+["Зелёный боул","Киноа, авокадо, огурец, эдамаме, зелёный горошек, микс салата","4000"],
+["Боул с красной рыбой","Рис, красная рыба, ореховый соус, дайкон, чука, огурец","4500"],
+["Шаверма","С креветками, моцареллой и вялеными томатами","3600"]]},
+{n:"Fast food",i:[
+["Датский хот-дог","Куриный / говяжий","1700/1900"],["Наггетсы","","1600"],["Картофель фри","","900"],
+["Буррито","Тортилья, фарш в мексиканской заправке, соус, картофель фри","2400"],["Картофельные дольки","","1300"],
+["Премиум бургер","Бургер, фри, соус, кола","4500"],
+["Сэндвич с ветчиной","Тостовый хлеб, ветчина, сыр чеддер, салат, соус, помидор","2000"],
+["Картофельный сет","Сырные палочки, картофельные шарики, дольки, фри, наггетсы, соусы","5000"],
+["Соусы в ассортименте","Кетчуп, сырный, горчица","300"]]},
+{n:"Пицца",note:"Готовим итальянскую пиццу на дрожжевом тесте собственного приготовления.",i:[
+["Маргарита","Тесто, томатный соус, сыр моцарелла","2200"],["Пепперони","Томатный соус, моцарелла, пепперони","2700"],
+["Гавайская","Томатный соус, моцарелла, ананас, курица","2900"],["Грибы и ветчина","Томатный соус, моцарелла, шампиньоны, ветчина","2900"],
+["Красный лук и бекон","Томатный соус, моцарелла, красный лук, бекон","3300"],["Четыре сыра","Томатный соус, моцарелла, фетакса, пармезан, дорблю","3500"],
+["Цыплёнок барбекю","Соус барбекю, моцарелла, красный лук, курица","3500"],["Сальсичча","Томатный соус, моцарелла, пепперони, куриные колбаски","3500"],
+["Ранч","Сливочно-чесночный соус, моцарелла, болгарский перец, курица","3500"],["Мексиканская","Моцарелла, фарш в мексиканской заправке, горчичный соус","4000"],
+["С красной рыбой и икрой","Сливочно-чесночный соус, моцарелла, красная рыба, икра","4000"]]},
+{n:"Кофе и чай",note:"Температура напитков с молоком около 60°. Если хотите погорячее, скажите бариста. Дополнительно: сливки 200 ₸, сироп или маршмеллоу 300 ₸, лимон или мята 100 ₸, доп. шот эспрессо 600 ₸, альтернативное молоко 400 или 600 ₸.",i:[
+["Эспрессо","","900"],["Американо","150 / 300 мл","900/1400"],["Капучино","150 / 300 мл","1500/1600"],["Латте","150 / 300 мл","1400/1500"],
+["Флэт уайт","150 мл","1600"],["Альтернатива","Кемекс, гейзер, V60, 300 мл","1300"],["Раф классический","200 мл","1600"],["Айс-латте","500 мл","1800"],
+["Листовой чай","250 / 400 / 1000 мл","300/500/1000"],["Чай облепиховый","1000 мл","2500"],["Чай ягодный","1000 мл","2500"],["Чай ташкентский","1000 мл","2500"],
+["Матча голубая","Цветочная, 350 мл. На альтернативном молоке +600 ₸","1500"],["Матча зелёная","Травяная, 350 мл. На альтернативном молоке +600 ₸","1500"],
+["Милкшейк","Клубничный, ванильный, банановый или шоколадный","1200"]]},
+{n:"Лимонады и авторские",i:[
+["Апельсин-ваниль","500 мл / 1,5 л","1200/2500"],["Классический лимонад","500 мл / 1,5 л","1200/2500"],["Клубничный мохито","500 мл / 1,5 л","1200/2500"],
+["Мохито","500 мл / 1,5 л","1200/2500"],["Манго-маракуйя","500 мл / 1,5 л","1200/2500"],
+["Лавандовый раф","200 мл","2000"],["Цитрусовый эспрессо-тоник","400 мл","2200"],["Spanish latte","400 мл","2200"],
+["Апельсиновый бамбл / вишнёвый бамбл","400 мл","2200"],["Горячий шоколад","150 / 300 мл","1300/1600"],
+["Цикорий латте карамель","300 мл","1800"],["Латте ваниль с протеином","300 мл","2700"]]}
+];
+
+const tabs = document.getElementById("tabs"), box = document.getElementById("dishes"), note = document.getElementById("note");
+const fmt = s => s.split("/").map(x => (+x).toLocaleString("ru-RU")).join(" / ") + " ₸";
+
+function show(k) {
+  tabs.querySelectorAll(".tab").forEach((b, j) => b.setAttribute("aria-selected", j === k));
+  const c = menu[k];
+  note.innerHTML = c.note ? `<p class="note">${c.note}</p>` : "";
+  box.innerHTML = c.i.map(([t, d, p]) =>
+    `<div class="dish"><h3>${t}</h3><span class="price">${fmt(p)}</span>${d ? `<p>${d}</p>` : ""}</div>`).join("");
+}
+menu.forEach((c, k) => {
+  const b = document.createElement("button");
+  b.className = "tab"; b.type = "button"; b.setAttribute("role", "tab"); b.textContent = c.n;
+  b.addEventListener("click", () => show(k));
+  tabs.appendChild(b);
+});
+show(0);
+</script>
+</body>
+</html>
